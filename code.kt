@@ -58,3 +58,9 @@ var hello: Unit = main(arrayOf(""))
 fun sayHello(): Unit { println("Hello") }
 fun sayHello(): Unit = println("Hello")
 fun sayHello() = println("Hello")
+
+// another example
+fun getUrlApi() { return "http://www.nogoodreadability.api.com" }
+fun getUrlApi(): String { return "http://www.notbad.api.com" }
+fun getUtlApi() = "http://www.mr.readability.api.com"
+
