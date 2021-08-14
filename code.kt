@@ -64,3 +64,31 @@ fun getUrlApi() { return "http://www.nogoodreadability.api.com" }
 fun getUrlApi(): String { return "http://www.notbad.api.com" }
 fun getUtlApi() = "http://www.mr.readability.api.com"
 
+// question
+fun main(args: Array<String>) {
+
+    // write code here!
+    println("Welcome OpenClassrooms Students!")
+
+    fun addNumbers(a: Int, b: Int) = a + b
+    fun getUsernameUpperCase(username: String) = username.toUpperCase()
+    fun isUsernameOfTeacher(username: String) = if (username == "Phil" || username == "George") true else false
+    
+    println(addNumbers(1, 2))
+    println(getUsernameUpperCase("Phil"))
+    println(isUsernameOfTeacher("Phil"))
+}
+
+// declare functions out of scope of main
+fun addNumbers(a: Int, b: Int) = a + b
+fun getUsernameUpperCase(username: String) = username.toUpperCase()
+// if expressions can be more readable like... only below
+// important and useful
+fun isUsernameOfTeacher(username: String) = username == "Phil" || username == "George"
+// this can return boolean; "true" or "false"
+
+fun main(args: Array<String>) {
+    println("Result is ${addNumbers(21, 21)}.") // 42
+    println("username to uppercase : ${getUsernameUpperCase("phil")}.") // PHIL
+    println("teacher? : ${isUsernameOfTeacher("Phil")}.") // true
+}
