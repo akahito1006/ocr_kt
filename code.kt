@@ -52,3 +52,9 @@ fun main(args: Array<String>) {
 }
 
 var hello: Unit = main(arrayOf(""))
+
+// functions of readability
+// "=" is better than : Type and { braces }
+fun sayHello(): Unit { println("Hello") }
+fun sayHello(): Unit = println("Hello")
+fun sayHello() = println("Hello")
