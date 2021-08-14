@@ -42,3 +42,13 @@ fun main(args: Array<String>) {
 private fun minOf(a: Int, b: Int): Int {
     return if (a<b) a else b
 }
+
+// in Kotlin, most control structures are expressions but statements
+// like even "Hello World" actually returns a "Unit" typed value; the default type created by Kotlin
+// also the "Unit" type corresponds to "void" in Java
+
+fun main(args: Array<String>) {
+    println("Hello world!")
+}
+
+var hello: Unit = main(arrayOf(""))
