@@ -31,3 +31,14 @@ var organizedSQL: String = "INSERT INTO "
 organizedSQL += "product_list (item, name, price) "
 organizedSQL += "VALUES ('vaporizer', 'eGo ONE', '4,000')"
 // INSERT INTO product_list (item, name, price) VALUES ('vaporizer', 'eGo ONE', '4,000')
+
+// create function on Kotlin
+fun main(args: Array<String>) {
+    println("Hello, World")
+}
+
+// the function's parameters are separated by commas
+// and to return an Int type value, the colon ":" is gonna be used at the end
+private fun minOf(a: Int, b: Int): Int {
+    return if (a<b) a else b
+}
