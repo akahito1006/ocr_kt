@@ -80,15 +80,15 @@ fun main(args: Array<String>) {
 }
 
 // declare functions out of scope of main
+
 fun addNumbers(a: Int, b: Int) = a + b
 fun getUsernameUpperCase(username: String) = username.toUpperCase()
 // if expressions can be more readable like... only below
-// important and useful
 fun isUsernameOfTeacher(username: String) = username == "Phil" || username == "George"
-// this can return boolean; "true" or "false"
 
 fun main(args: Array<String>) {
     println("Result is ${addNumbers(21, 21)}.") // 42
     println("username to uppercase : ${getUsernameUpperCase("phil")}.") // PHIL
     println("teacher? : ${isUsernameOfTeacher("Phil")}.") // true
 }
+
